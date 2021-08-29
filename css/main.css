@@ -57,7 +57,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 5px 0;
+	padding: 20px 0;
 	text-align: center;
 	border-bottom: 3px solid #77a466;
 }
@@ -78,6 +78,7 @@ header nav ul li {
 	font-size: 0.875em;
 	padding: 10px 30px;
 	list-style: none;
+	text-align: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -92,14 +93,13 @@ header nav ul li a{
 	align-items: center;
 	margin: 0 auto;
 	flex-flow: column wrap;
-	width: 100%;
-	text-align: left;
+	
 }
 
 .main-image {
 	height: auto;
 	float: left;
-	padding: 0 20px;
+	padding: 20px 20px;
 }
 .main-image img {
 	width: 100%;
@@ -125,30 +125,32 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
+	padding: 10px 20px;
+	flex-flow: row wrap;
+	width: 100%;
 }
 
 .section-one h3 {
-	padding: 10px 20px;
 	text-align: left;
+	
 }
 
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 20px;
 	text-align: left;
+
 }
 
 .menu {
 	list-style: none;
 	padding: 0;
-	text-align: left;
+	
 }
 .menu li {
-	padding: 10px 20px;
+	padding: 20px 0;
 	color:#77a466;
 }
 
@@ -156,13 +158,16 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 1.3125em;
-	text-align: left;
+	padding: 0;
+	
+	
 }
 
 .address {
 	font-size: 1em;
 	line-height: 1.5em;
 	text-align: left;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -182,4 +187,20 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+/*-------------Tablet Styles------------*/
+@media all and (min-width: 768px) {
+.bottom-section {
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+
+
+
+}
 }
