@@ -9,7 +9,6 @@ body {
 	align-items: center;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	flex-flow: column wrap;
 	width: 100%;
 }
 
@@ -18,8 +17,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	max-width: 1200px;
-	margin: 0 auto;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 }
 
 h1,
@@ -42,7 +40,7 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 1.3125em;
-    padding: 0 30px;
+    
 }
 
 /*The widths are in a percentage!*/
@@ -50,7 +48,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
 	flex-flow: column nowrap;
 	align-content: center;
 }
@@ -89,10 +86,10 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	margin: 0 auto;
 	flex-flow: column wrap;
+	width: 100%;
 	
 }
 
@@ -127,38 +124,42 @@ header nav ul li a{
 .section-three {
 	height: auto;
 	border-top: 1px solid #eee;
-	padding: 10px 20px;
-	flex-flow: row wrap;
-	width: 100%;
+	flex-flow: column wrap;
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .section-one h3 {
-	text-align: left;
-	
+	justify-content: flex-start;
+	 
 }
 
 
 .section-two h3,
 .section-three h3 {
-	text-align: left;
+	justify-content: flex-start;
 
 }
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding-left: 0;
+	
+
 	
 }
 .menu li {
-	padding: 20px 0;
 	color:#77a466;
+	padding-left: 0;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
 	line-height: 1.3125em;
-	padding: 0;
+
 	
 	
 }
@@ -166,8 +167,7 @@ header nav ul li a{
 .address {
 	font-size: 1em;
 	line-height: 1.5em;
-	text-align: left;
-	padding: 0;
+	
 }
 
 /*The widths are in a percentage!*/
@@ -177,7 +177,6 @@ footer {
 	align-items: center;
 	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	clear: both;
 	text-align: left;
 	flex-flow: column wrap;
