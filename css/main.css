@@ -1,0 +1,185 @@
+html{
+	font-size: 16px;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	flex-flow: column wrap;
+	width: 100%;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-flow: column wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.3125em;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	flex-flow: column nowrap;
+	align-content: center;
+}
+
+header h1 {
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 5px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 10px 30px;
+	list-style: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	flex-flow: column wrap;
+	width: 100%;
+	text-align: left;
+}
+
+.main-image {
+	height: auto;
+	float: left;
+	padding: 0 20px;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 10px 20px;
+	color: #77a466;
+}
+.main-title p {
+	padding: 10px 20px;
+	font-size: 1em;
+	line-height: 1.5625em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding: 10px 20px;
+	text-align: left;
+}
+
+
+.section-two h3,
+.section-three h3 {
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+}
+.menu li {
+	padding: 10px 20px;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3125em;
+	text-align: left;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: left;
+	flex-flow: column wrap;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
