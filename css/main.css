@@ -50,6 +50,7 @@ header {
 	align-items: center;
 	flex-flow: column nowrap;
 	align-content: center;
+	width: 90%
 }
 
 header h1 {
@@ -73,7 +74,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 10px 30px;
+	padding: 10px 0;
 	list-style: none;
 	text-align: center;
 }
@@ -89,14 +90,14 @@ header nav ul li a{
 	justify-content: flex-start;
 	align-items: center;
 	flex-flow: column wrap;
-	width: 100%;
+	width: 90%;
 	
 }
 
 .main-image {
 	height: auto;
 	float: left;
-	padding: 20px 20px;
+	
 }
 .main-image img {
 	width: 100%;
@@ -110,11 +111,10 @@ header nav ul li a{
 }
 .main-title h2 {
 	text-align: left;
-	padding: 10px 20px;
 	color: #77a466;
 }
 .main-title p {
-	padding: 10px 20px;
+	
 	font-size: 1em;
 	line-height: 1.5625em;
 }
@@ -125,10 +125,10 @@ header nav ul li a{
 	height: auto;
 	border-top: 1px solid #eee;
 	flex-flow: column wrap;
-	width: 90%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+	width: 100%;
 }
 
 .section-one h3 {
@@ -153,6 +153,7 @@ header nav ul li a{
 .menu li {
 	color:#77a466;
 	padding-left: 0;
+	padding: 5px 0;
 }
 
 .reviews {
@@ -191,15 +192,21 @@ footer span {
 @media all and (min-width: 768px) {
 .bottom-section {
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: space-around; 
 	align-items: flex-start;
+	border-top:  1px solid #77a466;
+	border-bottom: 1px solid #77a466;
+	width: 95%;
 }
+
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-
-
-
+	flex-basis: 33%;
+	padding: 0 20px;
+}
+.section-two {
+	border-left: 1px solid #77a466;
+	border-right: 1px solid #77a466;
 }
 }
