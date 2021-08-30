@@ -51,6 +51,7 @@ header {
 	flex-flow: column nowrap;
 	align-content: center;
 	width: 90%
+
 }
 
 header h1 {
@@ -58,7 +59,9 @@ header h1 {
 	padding: 20px 0;
 	text-align: center;
 	border-bottom: 3px solid #77a466;
+	width: 90%;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -87,7 +90,7 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;;
 	align-items: center;
 	flex-flow: column wrap;
 	width: 90%;
@@ -209,4 +212,35 @@ footer span {
 	border-left: 1px solid #77a466;
 	border-right: 1px solid #77a466;
 }
+}
+@media all and (min-width: 1200px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row nowrap;
+		width: 90%;
+		border-bottom: 1px solid #77a466;
+	}
+	header h1 {
+		width: 49%;
+		padding: 40px 0 20px 0;
+		border-bottom: 1px solid #77a466;
+		text-align: left;
+		
+	}
+	header nav {
+		display: flex;
+		flex: 1 0 40%;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	header nav ul{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+		
+	header nav ul li {
+		padding: 40px 10px 20px 10px;
+	}
 }
